@@ -1,1 +1,1 @@
-# Arduino-grupo-1
+# Arduino (grupo 1)

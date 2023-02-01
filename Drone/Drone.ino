@@ -1,10 +1,10 @@
 #include <IRremote.h>
 #include <MPU6050.h>
 
-int const speedChange = 10;
 int const in1 = 4, in2 = 3, enA = 5; //enA needs PWM
 int const infraRed = 6;
 
+int const speedChange = 10;
 int const initialSpeed = 150;
 int speed = initialSpeed;
 bool onOff = true;

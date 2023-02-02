@@ -2,21 +2,12 @@
 
 String btn;
 
-int in1 = 3;
-int in2 = 4;
-int in3 = 5;
-int in4 = 6;
-
 IRrecv receptor(2);
 decode_results outputValue;
 
 void setup() {
   Serial.begin(9600);
   receptor.enableIRIn();
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
-  pinMode(in3, OUTPUT);
-  pinMode(in4, OUTPUT);
 }
 
 void loop() {
@@ -57,18 +48,12 @@ void loop() {
       btn = "right";
     if (outputValue.value == 16726215)
       btn = "ok";
-    //----------------------------------
+    //Segurar botão
     if (outputValue.value == 4294967295) {
-      if (btn == "up"){
-        Serial.println("UP");
-        digitalWrite(in1, LOW);
-        digitalWrite(in2, HIGH);
-      }
+      //Se sgurar o botão
     }
   } else {
     delay(125);
-    Serial.println("STOP");
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, LOW);
+    //Se soltar
   }
 }

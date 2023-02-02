@@ -27,7 +27,6 @@ void loop() {
       btn = "left";
     if (outputValue.value == 16734885)
       btn = "right";
-    //----------------------------------
     if (outputValue.value == 4294967295) {
       if (btn == "up"){
         Serial.println("UP");

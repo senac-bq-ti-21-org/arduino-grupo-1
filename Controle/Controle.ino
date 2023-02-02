@@ -2,7 +2,9 @@
 
 String btn;
 
-IRrecv receptor(2);
+int const infraRed = 2;
+
+IRrecv receptor(infraRed);
 decode_results outputValue;
 
 void setup() {

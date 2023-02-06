@@ -2,8 +2,8 @@
 
 String btn;
 
-int const in1 = 3, in2 = 4, in3 = 5, in4 = 6;
-int const infraRed = 2;
+int const in1 = 2, in2 = 3, in3 = 4, in4 = 5;
+int const infraRed = 6;
 
 IRrecv receptor(infraRed);
 decode_results outputValue;
@@ -33,7 +33,7 @@ void loop() {
         digitalWrite(in1, LOW);
         digitalWrite(in2, HIGH);
         digitalWrite(in3, LOW);
-        digitalWrite(in4, HIGH);
+        digitalWrite(in4, LOW);
       }
       if (btn == "left"){
         Serial.println("LEFT");

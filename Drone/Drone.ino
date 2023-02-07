@@ -6,6 +6,7 @@ int const infraRed = 6;
 
 int const speedChange = 10;
 int const initialSpeed = 150;
+
 int speed = initialSpeed;
 bool onOff = true;
 
@@ -14,10 +15,10 @@ decode_results outputValue;
 
 void setup() {
   Serial.begin(9600);
+  receptor.enableIRIn();
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
   pinMode(enA, OUTPUT);
-  receptor.enableIRIn();
   digitalWrite(in1, LOW);
   digitalWrite(in2, LOW);
 }

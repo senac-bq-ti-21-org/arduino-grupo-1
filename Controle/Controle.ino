@@ -16,46 +16,62 @@ void loop() {
   if (receptor.decode(&outputValue)) {
     receptor.resume();
     Serial.println(outputValue.value);
-    if (outputValue.value == 16753245)
+    if (outputValue.value == 16753245) {
       btn = "1";
-    if (outputValue.value == 16736925)
+    }
+    if (outputValue.value == 16736925) {
       btn = "2";
-    if (outputValue.value == 16769565)
+    }
+    if (outputValue.value == 16769565) {
       btn = "3";
-    if (outputValue.value == 16720605)
+    }
+    if (outputValue.value == 16720605) {
       btn = "4";
-    if (outputValue.value == 16712445)
+    }
+    if (outputValue.value == 16712445) {
       btn = "5";
-    if (outputValue.value == 16761405)
+    }
+    if (outputValue.value == 16761405) {
       btn = "6";
-    if (outputValue.value == 16769055)
+    }
+    if (outputValue.value == 16769055) {
       btn = "7";
-    if (outputValue.value == 16754775)
+    }
+    if (outputValue.value == 16754775) {
       btn = "8";
-    if (outputValue.value == 16748655)
+    }
+    if (outputValue.value == 16748655) {
       btn = "9";
-    if (outputValue.value == 16750695)
+    }
+    if (outputValue.value == 16750695) {
       btn = "0";
-    if (outputValue.value == 16738455)
+    }
+    if (outputValue.value == 16738455) {
       btn = "*";
-    if (outputValue.value == 16756815)
+    }
+    if (outputValue.value == 16756815) {
       btn = "#";
-    if (outputValue.value == 16718055)
+    }
+    if (outputValue.value == 16718055) {
       btn = "up";
-    if (outputValue.value == 16730805)
+    }
+    if (outputValue.value == 16730805) {
       btn = "down";
-    if (outputValue.value == 16716015)
+    }
+    if (outputValue.value == 16716015) {
       btn = "left";
-    if (outputValue.value == 16734885)
+    }
+    if (outputValue.value == 16734885) {
       btn = "right";
-    if (outputValue.value == 16726215)
+    }
+    if (outputValue.value == 16726215) {
       btn = "ok";
-    //Segurar bot„o
+    }
     if (outputValue.value == 4294967295) {
-      //Se sgurar o bot„o
+      //Se segurar o bot√£o
     }
   } else {
     delay(125);
-    //Se soltar
+    //Se n√£o precionar
   }
 }

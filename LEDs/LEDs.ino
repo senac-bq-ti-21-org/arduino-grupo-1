@@ -1,8 +1,11 @@
-const int led1 = 2, led2 = 3, led3 = 4, led4 = 5, led5 = 6, led6 = 7, led7 = 8, led8 = 9, led9 = 10, led10 = 11, led11 = 12, led12 = 13;
-const int led1Mi = 0, led2Mi = 80, led3Mi = 165, led4Mi = 250, led5Mi = 335, led6Mi = 420, led7Mi = 505, led8Mi = 590, led9Mi = 675, led10Mi = 760, led11Mi = 845, led12Mi = 930;
-const int led1Ma = 85, led2Ma = 170, led3Ma = 255, led4Ma = 340, led5Ma = 425, led6Ma = 510, led7Ma = 595, led8Ma = 680, led9Ma = 765, led10Ma = 850, led11Ma = 935, led12Ma = 1024;
+const int btn = 2, led1 = 3, led2 = 4, led3 = 5, led4 = 6, led5 = 7, led6 = 8, led7 = 9, led8 = 10, led9 = 11, led10 = 12, led11 = 13;
+const int led1Mi1 = 0, led2Mi1 = 40, led3Mi1 = 80, led4Mi1 = 120, led5Mi1 = 160, led6Mi1 = 200, led7Mi1 = 240, led8Mi1 = 280, led9Mi1 = 320, led10Mi1 = 360, led11Mi1 = 400;
+const int led1Mi = 0, led2Mi = 40, led3Mi = 80, led4Mi = 120, led5Mi = 160, led6Mi = 200, led7Mi = 240, led8Mi = 280, led9Mi = 320, led10Mi = 360, led11Mi = 400, 
+const int led1Ma1 = 39, led2Ma1 = 79, led3Ma1 = 119, led4Ma1 = 159, led5Ma1 = 199, led6Ma1 = 239, led7Ma1 = 279, led8Ma1 = 680, led9Ma1 = 359, led10Ma1 = 499, led11Ma1 = 439;
+const int led1Ma = 39, led2Ma = 79, led3Ma = 119, led4Ma = 159, led5Ma = 199, led6Ma = 239, led7Ma = 279, led8Ma = 680, led9Ma = 359, led10Ma = 499, led11Ma = 439, 
 
 void setup() {
+  pinMode(btn, INPUT);
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
@@ -14,7 +17,6 @@ void setup() {
   pinMode(led9, OUTPUT);
   pinMode(led10, OUTPUT);
   pinMode(led11, OUTPUT);
-  pinMode(led12, OUTPUT);
 }
 
 void loop() {
